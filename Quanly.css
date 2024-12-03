@@ -1,0 +1,317 @@
+
+.classQuanLy{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 13% 85%;
+    grid-template-rows: 5% 95% ;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    overflow: hidden;
+}
+
+.menu {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-color: rgb(17, 30, 108);
+    z-index: 1;
+    color: white;
+    padding: 0;
+}
+
+.innermenu {
+    height: 100%; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.menu ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+.menu-1 {
+    display: flex;
+    align-items: center; 
+    height: 40px; 
+    margin: 7px 0; 
+    padding-left: 15px; 
+    font-size: large;
+    color: white; 
+    cursor: pointer; 
+    overflow: hidden; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.menu-1:hover {
+    color: black; 
+    background-color: rgba(192, 200, 248, 0.973); 
+}
+
+.menu-1 i {
+    margin-right: 10px; 
+    font-size: 18px; 
+}
+.logo{
+height: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+line-height: 1px;
+}
+
+.logo img{
+    max-width: 25%;
+    min-height: 25%;
+    border-radius: 50%;
+    border: solid 2px;
+    justify-items: center;
+    align-content: center;
+}
+.logo p{
+    margin: 0;
+}
+.out{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    background-color: rgb(17, 30, 108);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.out i{
+    background-color: yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.content{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.093);
+}
+.TieuDe{
+    margin-top: 10px;
+    width: 95%;
+    height: 6%;
+    background-color: white;
+    border-left: 10px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.list{
+    margin-top: 20px;
+    width: 95%;
+    height: 90%;
+    background-color: white;
+
+
+}
+.pick{
+    display: flex;
+    width: 100%;
+    height: 8%;
+   border-bottom: 1px solid;
+
+}
+.pickcon{
+    cursor: pointer;
+   padding-left: 10px;
+   padding-right: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.pickcon:hover{
+transform: translateY(-2px);
+box-shadow: black 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ }
+ .search{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+ }
+ .search form{
+        padding:10px 10px;
+
+         margin-right: 10px;
+ }
+.search form input{
+    font-size: large;
+}
+.Table{
+  height: 70%;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+tr td{
+    border: 1px solid;
+    height: 100px;
+}
+tr th{
+    border: 1px solid;
+}
+.Id{
+    width: 5%;
+}
+.IDNV{
+    width: 10%;
+}
+.HoTen{
+    width: 15%;
+}
+.Anh{
+    width: 5%;
+
+}
+.Diachi{
+    width: 20%;
+}
+.Ns{
+    width: 15%; 
+}
+.Gt{
+    width: 10%;
+}
+.Sdt{
+    width: 10%;
+}
+.Chucvu{
+    width: 10%;
+}
+.Tinhnan{
+    width: 10%;
+}
+.Anh img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+td i{
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+}
+.menu {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-color: rgb(17, 30, 108);
+    z-index: 1;
+    color: white;
+    padding: 0; /* Đảm bảo không có khoảng đệm */
+}
+
+.innermenu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Đảm bảo căn sát bên trái */
+    padding: 0; /* Đảm bảo không có khoảng đệm */
+    margin: 0; /* Đảm bảo không có lề */
+}
+
+.foot {
+       display: flex;
+       justify-content: end;
+}
+.lui{
+    padding: 10px;
+width: 33%;
+border: 1px solid gray;
+margin: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.lui:hover{
+    background-color: rgb(156, 156, 245);
+}
+.listpage{
+    padding:10px;
+    text-align: center;
+    list-style: none;
+}
+.listpage li{
+    background-color: #ffffffBD;
+    padding:20px;
+    display: inline-block;
+    margin:0 10px;
+    cursor: pointer;
+}
+.listpage .active{
+    background-color: #B192EF;
+    color:#fff;
+}
+.nenan{
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.707);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5 0.5;
+}
+.remove{
+    height: 30%;
+    width: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.remove i{
+    position:absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(252, 73, 73);
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.NoOrYes{
+    position: absolute;
+    bottom: 0;
+}
+.NoOrYes button{
+    margin: 20px;
+    height: 50px;
+    border-radius: 10px;
+   
+}
+.fa-trash{
+    color: rgb(114, 5, 5);
+    background-color: rgb(242, 108, 108);
+}
+.fa-trash:hover{
+    background-color: red;
+
+}
